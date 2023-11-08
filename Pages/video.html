@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaos Agent: The Butcher's Reckoning</title>
+    <link rel="stylesheet" href="./../Styles/video.css">
+    <link rel="shortcut icon" href="https://rubberjohnniesmasks.com/cdn/shop/products/severedhandsnb_1_620x.png?v=1641561829" type="image/x-icon">
+</head>
+<body>
+    <video id="myvideo" autoplay>
+        <source src="./../assets/video/video2.mp4" type="video/mp4">
+         Your browser does not support html5 videos
+     </video>
+</body>
+<script>
+    var videoObj = document.getElementById('myvideo')   
+    videoObj.onended = function(e) {
+        window.location.href = "./../Pages/level2.html";
+    }
+</script>  
+</html>

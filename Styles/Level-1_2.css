@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("./../assets/images/Level-1 Part-2.png");
+    background-size:  100vw 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    user-select: none;
+}
+
+@font-face {
+    font-family: jeju;
+    src: url("./..//assets/fonts/JejuHallasan-Regular.ttf");
+}
+
+@font-face {
+    font-family: jakob;
+    src: url("./../assets/fonts/JakobsHandwriting-Azep.ttf");
+    font-weight: 900;
+}
+
+h4, span{
+    color: white;
+    -webkit-text-stroke: 1px black;
+    font-family: jeju;
+    font-weight: 10;
+    font-size: 60px;
+    letter-spacing: 4.2px;
+}
+
+h4{
+    position: relative;
+    left: 77vw;
+    top: 2.8vh;
+}
+
+
+h3{
+    margin: 30vh;
+    color: #FFF;
+    text-align: center;
+    font-family: jakob;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5.6px;
+    text-transform: capitalize;
+}
+
+.options--text{
+    margin: -20vh 15vw ;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 1359px;
+    height: 68px;
+    flex-shrink: 0;
+}
+
+button{
+    width: 303px;
+    height: 68px;
+    background-color: black;
+    outline: none;
+    border: 2px solid white ;
+    border-radius: 20px 0 20px 0;
+    color: #FFF;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: jeju;
+}
+
+
+button:hover{
+    box-shadow: 2px 5px 5px rgb(255, 0, 0);
+    
+}
+button:active{
+    transform: translateY(7px);
+}
+
+
+
+@media (min-width:500px) and (max-width:1000px) and (orientation:landscape){
+    h4, span{
+        color: white;
+        -webkit-text-stroke: 1px black;
+        font-family: jeju;
+        font-weight: 10;
+        font-size: 30px;
+        letter-spacing: 4.2px;
+    }
+    
+    h4{
+        position: relative;
+        left: 72vw;
+        top: 2.8vh;
+    }
+    
+    
+    h3{
+        margin: 30vh;
+        color: #FFF;
+        text-align: center;
+        font-family: jakob;
+        font-size: 25px;
+        font-weight: 900;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 5.6px;
+        text-transform: capitalize;
+    }
+    
+    .options--text{
+        margin: -20vh 6vw ;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+        width: 700px;
+        height: 68px;
+        flex-shrink: 0;
+    }
+    
+    button{
+        width: 150px;
+        height: 40px;
+        background-color: black;
+        outline: none;
+        border: 2px solid white ;
+        border-radius: 20px 0 20px 0;
+        color: #FFF;
+        font-size: 8px;
+        cursor: pointer;
+        font-family: jeju;
+    }
+    
+    
+    button:hover{
+        box-shadow: 2px 5px 5px rgb(255, 0, 0);
+        
+    }
+    button:active{
+        transform: translateY(7px);
+    }
+}

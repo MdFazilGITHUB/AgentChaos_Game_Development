@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("./../assets/images/Level-3.png");
+    background-size:  100vw 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    user-select: none;
+}
+
+
+@font-face {
+    font-family: jeju;
+    src: url("./../assets/fonts/JejuHallasan-Regular.ttf");
+}
+.container{
+    display: flex;
+    width: 100vw;
+    height: 800px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 240px;
+}
+.container--battle1,.container--battle2{
+    height: 600px;
+    width: 600px;
+    border: red solid 2px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.568);
+}
+
+#player-image,#butcher-image{
+    height: 400px;
+    margin-left: 100px;
+    filter: invert(1);  
+    margin-top: 50px;
+}
+
+#butcher-image{
+    margin-top: 80px;
+    
+}
+
+.one{
+    margin-top: 60px;
+    margin-left: 55px;
+    color: rgb(255, 255, 255);
+}
+
+.two{
+    margin-top: 150px;
+    margin-left: 200px;
+    color: red;
+}
+
+.one,.two{
+    position: absolute;
+    font-family: jeju;
+    font-size: 40px;
+}
+
+
+.buttons{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn{
+    margin-top: 20px;
+    border-radius: 50%; 
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid rgb(255, 0, 0);
+}
+
+.btn img{
+    filter: invert(1);
+    height: 50px;
+}
+
+
+.btn:hover{
+    background-color: rgb(14, 1, 1);
+    box-shadow: -1px 2px 3px  rgb(255, 0, 0);
+}
+.btn:active{
+    transform: translateY(10px);
+}
+
+
+@media (min-width:500px) and (max-width:1000px) and (orientation:landscape){
+    
+    .container{
+        display: flex;
+        width: 100vw;
+        height: 57px;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 150px;
+    }
+    .container--battle1,.container--battle2{
+        height: 180px;
+        width: 180px;
+        border: red solid 2px;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.568);
+    }
+    
+    #player-image,#butcher-image{
+        height: 100px;
+        margin-left: 43px;
+        filter: invert(1);
+        margin-top: 31px;
+    }
+    
+    #butcher-image{
+        margin-top: 45px;
+        
+    }
+    
+    .one{
+        margin-top: 31px;
+        margin-left: -28px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .two{
+        margin-top: 50px;
+        margin-left: 37px;
+        color: red;
+    }
+    
+    .one,.two{
+        position: absolute;
+        font-family: jeju;
+        font-size: 20px;
+    }
+    
+    
+    .buttons{
+        cursor: pointer;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .btn{
+        margin-top: -10px;
+        border-radius: 50%;
+        padding: 9px;
+        background-color: rgb(0, 0, 0);
+        border: 3px solid rgb(255, 0, 0);
+    }
+    
+    .btn img{
+        filter: invert(1);
+        height: 15px;
+        width: 15px;
+    }
+    
+    
+    .btn:hover{
+        background-color: rgb(14, 1, 1);
+        box-shadow: -1px 2px 3px  rgb(255, 0, 0);
+    }
+    .btn:active{
+        transform: translateY(10px);
+    }
+   
+}
